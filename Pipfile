@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+discord = "*"
+trueskill = "*"
+timeago = "*"
+python-dotenv = "*"
+dnspython = "*"
+simple-http-server = "*"
+imgkit = "*"
+discord-py-slash-command = "*"
+requests = "*"
+
+[dev-packages]
+pytest = "*"
+
+[requires]
+python_version = "3.9"
+
+[packages.pymongo]
+extras = [ "srv", "tls",]
+version = "*"
