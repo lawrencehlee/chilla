@@ -32,7 +32,7 @@ variables = {
     "admin_channel": getenv("CHILLA_DISCORD_ADMIN_CHANNEL"),
     "avail": "<:av:890348480277659649>",
     "taken": "<:ta:890348480881655868>",
-    "live": "<a:live2:867115966278402128>",
+    "live": "<a:live2:1017682656592416910>",
     "notlive": "<:notlive:845432882314215464>",
     "gold": "<:gold:922551402964852856>",
     "silver": "<:silver:922548735504945202>",
@@ -46,8 +46,8 @@ variables = {
     "chillin_role": 756357850003144705,
     "chilla_admin_role": 894630221607755826,
     "chilla_sa_role": 894980304631115896,
-    "rank": "<:rank2:937024794610790471>",
-    "rank_red": "<:rank_red:937036271421907068>"
+    "rank": "<:rank2:1017682656592416910>",
+    "rank_red": "<:rank_red:1017682656592416910>"
 }
 
 map_imgs = {
