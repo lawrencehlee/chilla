@@ -95,7 +95,7 @@ class Misc(commands.Cog):
                     name=f"{stream['viewer_count']} <:views:887829020719333407> {stream['user_name']} - {stream['title']}",
                     value=f"[twitch.tv/{stream['user_name']}](https://twitch.tv/{stream['user_name']})", inline=False)
         else:
-            embed = discord.Embed(description="No streams for **Midair: Community Edition**", color=msg.accent_color)
+            embed = discord.Embed(description="No streams for **Midair 2**", color=msg.accent_color)
         await ctx.send(embed=embed)
 
 

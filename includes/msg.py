@@ -136,7 +136,6 @@ async def game_started(ctx, bot, game: Game):
 
     body = f"""
         **`Maps:`** {', '.join(maps)}
-        **`Suggested Server:`** {suggested_server}
     """
     embed = discord.Embed(title="Game Started", description=body, color=success_color)
     team1_captain = f"{config.variables['rank_red']} **`{str(member_schema.get_profile_by_id(game.team1_captain.user_id)['gamesPlayed'])}`** **`{game.team1_captain.name[:14]}`**"
@@ -200,7 +199,6 @@ async def new_game_started(ctx, bot, game: Game, user):
 
     body = f"""
         **`Maps:`** {', '.join(maps)}
-        **`Suggested Server:`** {suggested_server}
     """
     embed = discord.Embed(title="Game Started", description=body, color=success_color)
     team1_captain = f"{config.variables['rank_red']} **`{str(member_schema.get_profile_by_id(game.team1_captain.user_id)['gamesPlayed'])}`** **`{game.team1_captain.name[:14]}`**"

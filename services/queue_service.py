@@ -6,7 +6,7 @@ from models.queue_models import Queue, AddResult, AddStatus
 from schemas import member_schema, queue_schema, ingame_schema
 
 
-def add(user: User, queue: Queue, skip_delay=False) -> AddResult:
+def add(user: User, queue: Queue, skip_delay=True) -> AddResult:
     member_schema.check_profile(user)
     if queue_schema.check_if_in_queue(user, queue):
         queue_schema.refresh_add(user, queue)

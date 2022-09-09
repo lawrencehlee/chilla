@@ -290,8 +290,8 @@ def pick_suggested_server(players):
         if player_region != "Not Set":
             regions.append(player_region)
 
-    na_servers = ["Chicago PUG", "SLC"]
-    eu_servers = ["London PUG", "Amsterdam PUG"]
+    na_servers = ["Chicago PUG", "Los Angeles PUG"]
+    eu_servers = ["London PUG"]
     aus_servers = ["Sydney PUG"]
 
     if not regions:

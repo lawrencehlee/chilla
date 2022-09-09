@@ -1,6 +1,7 @@
 import datetime
 import threading
 from glob import glob
+from pathlib import PurePath
 
 import discord
 from discord.ext import commands, tasks
@@ -10,7 +11,7 @@ from simple_http_server import server, request_map
 import config
 from schemas import queue_schema, general_schema
 
-COGS = [path.split("/")[-1][:-3] for path in glob("./cogs/*.py")]
+COGS = [PurePath(path).stem for path in glob("./cogs/*.py")]
 if config.variables['environment'] == "PROD":
     COGS.remove("testing")
 
@@ -49,7 +50,7 @@ async def autoremove_expired_messages():
 @client.event
 async def on_ready():
     print(f"CHILLA ONLINE | VERSION: {config.variables['version']}")
-    await client.change_presence(activity=discord.Game(name="MA:CE"))
+    await client.change_presence(activity=discord.Game(name="Midair 2"))
     autoremove.start()
     autoremove_expired_messages.start()
 
